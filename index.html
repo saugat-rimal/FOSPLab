@@ -14,7 +14,7 @@
     <title>FOSP LAB 1</title>
 
     <style>
-        /* Global changes */
+        /*----------- Global changes ---------------*/
         :root {
             font-family: 'Jost', sans-serif;
             box-sizing: border-box;
@@ -42,7 +42,7 @@
 
 
 
-        /* Css for question no 2  */
+        /*---------- Css for question no 2 -------------- */
         table {
             width: 60vw;
             height: 150px;
@@ -50,7 +50,8 @@
             text-align: center;
         }
 
-        /* Css for question no 3  */
+
+        /*---------- Css for question no 3 -------------- */
         form {
             max-width: 400px;
             padding: 20px 30px;
@@ -89,7 +90,7 @@
         }
 
 
-        /* Question no 4 */
+        /*---------- Css for question no 4 -------------- */
 
         header {
             max-width: 1200px;
@@ -126,6 +127,21 @@
         article button a {
             color: #fff;
             text-decoration: none;
+        }
+
+        /*-------- Css for footer  ------------*/
+
+        footer {
+            background-color: #0e2937;
+            color: #fff;
+            padding: .5rem;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        footer a {
+            background-color: #0e2937;
+            color: #fff;
         }
     </style>
 </head>
@@ -307,9 +323,114 @@
     </section>
 
 
+    <!-- Question no 5: Demonstrate the concept of inline CSS and external CSS. -->
+    <section>
+        <h2>Question no 5: Demonstrate the concept of inline CSS and external CSS.</h2>
+
+        <!-- Explanation of inline css  -->
+
+        <h3>Inline CSS</h3>
+        <p>Inline css is the method of adding styles in HTML elements using the "style" attribute. This attribute allows
+            to apply the CSS directly to the HTML element. Here's an example:</p>
+        <code>
+            &lt;p style="color: red; font-size: 16px;"&gt; This is inline CSS  &lt;/p&gt;
+        </code>
+
+        <p>In the above example, the <strong>"style"</strong> attribute is used to apply two CSS rules to the &lt;p&gt;
+            element:
+            color:red and fontsize:16px.</p>
+
+
+        <!-- Explanation of external css  -->
+        <h3>External CSS</h3>
+        <p class="external">External CSS is a method of adding styles to HTML documents by linking to a separate CSS
+            files. The CSS file contains all the styles for the page and is linked to the HTML document using
+            &lt;link&gt; element. Here's the example: </p>
+
+        <code>
+                    &lt;head&gt; 
+                    &lt;link rel="stylesheet" href="styles.css" &lt;/link&gt;
+                    &lt;/head&gt;
+        </code>
+
+        <p>In the above example, <strong>"link"</strong> element tells the browser where to find the external CSS file.
+            The <strong>"href"</strong>
+            attribute specifies the path to the css file, and the <strong>"rel"</strong> attribute tells the browser
+            that this is a
+            stylesheet. Now, when you open this HTML document in the web browser, it will apply the styles defined in
+            the external CSS file to the elements in the document. </p>
+    </section>
+
+    <!-- Question no 6: Demonstrate the concept of Class selector and ID selector in CSS -->
+    <section>
+        <h2>Question no 5: Demonstrate the concept of Class selector and ID selector in CSS.</h2>
+
+        <!-- Explanation of class selector  -->
+
+        <h3>Class Selector</h3>
+        <p>Class selector is used to select elements with a specific class attribute. The class attribute can be used
+            on any HTML element. Here's an example:</p>
+        <code>
+
+            &lt;h1 class="test--class"&gt; This is a heading &lt;/h1&gt;
+            &lt;p class="test--class"&gt; This is a paragraph &lt;/p&gt;
+        </code>
+
+        <p>In the above example, the <strong>"class"</strong> attribute is used to add a class to the &lt;h1&gt; and
+            &lt;p&gt; elements. Now, we can use the class selector to style these elements. Here's the example:</p>
+
+        <code>
+            .test--class {
+            color: red;
+            font-size: 24px;
+            }
+        </code>
+
+        <p>In the above example, the <strong>"."</strong> symbol is used to select elements with a specific class
+            attribute. The <strong>"test--class"</strong> class is used to style the
+            &lt;h1&gt; and &lt;p&gt; elements respectively. </p>
+
+
+        <!-- Explanation of id selector  -->
+        <h3>ID Selector</h3>
+        <p>ID selector is used to select elements with a specific unique id attribute. The id attribute can be used on
+            any
+            HTML element. Here's an example:</p>
+        <code>
+
+                &lt;h1 id="heading"&gt; This is a heading &lt;/h1&gt;
+                &lt;p id="paragraph"&gt; This is a paragraph &lt;/p&gt;
+        </code>
+
+        <p>In the above example, the <strong>"id"</strong> attribute is used to add an id to the &lt;h1&gt; and
+            &lt;p&gt; elements. Now, we can use the id selector to style these elements. Here's the example:</p>
+
+        <code>
+            #heading {
+            color: red;
+            font-size: 24px;
+            }
+            #paragraph {
+            color: blue;
+            font-size: 16px;
+            }
+        </code>
+
+        <p>In the above example, the <strong>"#"</strong> symbol is used to select elements with a specific id
+            attribute. The <strong>"heading"</strong> and <strong>"paragraph"</strong> ids are used to style the
+            &lt;h1&gt; and &lt;p&gt; elements respectively. </p>
 
 
 
+    </section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>FOSP Lab Report by <a target="_blank" href="https://saugatrimal.com.np">Saugat Rimal</a></p>
+    </footer>
 
 
     <!-- External js for form -->
