@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+    <title>FOSP LAB 1</title>
+
+    <style>
+        /* Global changes */
+        :root {
+            font-family: 'Jost', sans-serif;
+            box-sizing: border-box;
+        }
+
+        section {
+            margin-block: calc(2rem + 2vh);
+            padding-inline: calc(.5rem + 2vw);
+        }
+
+        button {
+            border-radius: 3px;
+            background-color: #041014;
+            color: #fff;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+
+        button:hover {
+            background-color: #0e2937;
+        }
+
+
+
+        /* Css for question no 2  */
+        table {
+            width: 60vw;
+            height: 150px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* Css for question no 3  */
+        form {
+            max-width: 400px;
+            padding: 20px 30px;
+            border: 1px solid black;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form h3 {
+            text-align: right;
+
+        }
+
+        form label {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        form label input {
+            padding: 5px;
+        }
+
+        form .form--buttons {
+            margin-block-start: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        form .form--buttons button {
+            padding: 10px 15px;
+        }
+
+
+        /* Question no 4 */
+
+        header {
+            max-width: 1200px;
+            background-color: #0e2937;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 2rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-inline: 1rem;
+        }
+
+        main {
+            max-width: 1200px;
+            display: flex;
+            padding: calc(2rem + 2vh) calc(.5rem + 2vw);
+
+        }
+
+        article p {
+            padding-inline-end: calc(5rem + 2vw);
+        }
+
+        article button {
+            padding: 8px;
+        }
+
+        article button a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Question no 1: Write down the html code to display the following list. -->
+    <section>
+        <h2>Question no 1: Write down the html code to display the following list.</h2>
+
+        <ol>
+            <li>English
+                <ol type="i">
+                    <li>Literature</li>
+                    <li>Grammar</li>
+                </ol>
+            </li>
+            <li>Computer
+                <ol type="i">
+                    <li>Programming
+                        <ol type="a">
+                            <li>Low Level</li>
+                            <li>High Level</li>
+                        </ol>
+                    </li>
+                    <li>Database</li>
+                    <li>Networking</li>
+                </ol>
+
+            </li>
+        </ol>
+
+
+    </section>
+
+    <!-- Question no 2: Write the html code to show output as a table. -->
+    <section>
+        <h2>Question no 2: Write the html code to show output as a table.</h2>
+        <table border="1px" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="5">Marksheet</th>
+                </tr>
+
+                <tr>
+                    <th>Subject</th>
+                    <th colspan="4">Marks </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">
+                        FOSP
+                    </td>
+                    <th colspan="2"> Internal </th>
+                    <th colspan="2"> External </th>
+                </tr>
+
+                <tr>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                </tr>
+
+                <tr>
+                    <td>20</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td> - </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Question no 3: Write the html code to create form. -->
+    <section>
+        <h2>Question no 3: Write the html code to create form.</h2>
+
+        <form action="https://send.pageclip.co/gcJlF0mq18OOyMSVhQTVZjyQlLf97V3V/fosp" class="pageclip-form"
+            method="post">
+            <h3>Web Registration Form</h3>
+
+            <label for="name">
+                Name:
+                <input type="text" name="Name" id="name">
+            </label>
+
+            <label for="dob">
+                Date of Birth:
+                <input type="text" name="dob" id="dob">
+            </label>
+            <label for="father">
+                Father's Name:
+                <input type="text" name="father" id="father">
+            </label>
+
+            <label for="gender">
+                Gender:
+
+                <label for="male">
+                    <input type="radio" name="male" value="male" id="male" checked />
+                    Male
+                </label>
+
+                <label for="female">
+                    <input type="radio" name="female" value="female" id="female" />
+                    Female
+                </label>
+            </label>
+
+            <label for="address">
+                Address:
+                <input type="text" name="address" id="address">
+
+            </label>
+
+            <label for="email">
+                Email:
+                <input type="email" name="email" id="email">
+            </label>
+
+            <div class="form--buttons">
+                <button type="submit" class="pageclip-form__submit">
+                    <span>Submit</span>
+                </button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- Question no 3: Create a specimen of your college webpage. Divide the browser into two frames. The frame on the left
+    will be a menu consisting of hyperlinks. Clicking on any one of these links will lead to a new page which must open
+    in the target frame which is on the right hand side. -->
+    <section>
+        <h2>Question no 4: Create a specimen of your college webpage. Divide the browser into two
+            frames. The frame on the left
+            will be a menu consisting of hyperlinks. Clicking on any one of these links will lead to a new page which
+            must open
+            in the target frame which is on the right hand side.</h2>
+
+
+        <header>
+            <h3>PUSOE</h3>
+            <nav>
+                <a href="#">Home</a>
+                <a href="/frame/index.html">About Frame</a>
+                <a href="/frame/index.html">View Frame</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>Why not frame-based layout?</h2>
+                <p>Frames are an older web design technique and may not be compatible with all modern browsers.The
+                    <strong>frame</strong> tag was used in HTML 4 to define one particular window (frame) within a
+                    <strong>frameset</strong>.
+
+                    It may
+                    be
+                    worth considering alternative layouts, such as using CSS to create a responsive layout that
+                    adjusts
+                    to
+                    different screen sizes.
+                </p>
+                <button>
+                    <a href="/frame/index.html"> View Frame Based Layout</a>
+                </button>
+
+
+            </article>
+
+            <img src="https://placehold.co/270" alt="placeholder">
+
+        </main>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- External js for form -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
