@@ -113,8 +113,20 @@
             max-width: 1200px;
             display: flex;
             padding: calc(2rem + 2vh) calc(.5rem + 2vw);
-
+            gap: 2rem;
         }
+
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            main img {
+                display: none;
+            }
+        }
+
+
 
         article p {
             padding-inline-end: calc(5rem + 2vw);
@@ -276,7 +288,7 @@
 
     </section>
 
-    <!-- Question no 3: Create a specimen of your college webpage. Divide the browser into two frames. The frame on the left
+    <!-- Question no 4: Create a specimen of your college webpage. Divide the browser into two frames. The frame on the left
     will be a menu consisting of hyperlinks. Clicking on any one of these links will lead to a new page which must open
     in the target frame which is on the right hand side. -->
     <section>
@@ -316,7 +328,7 @@
 
             </article>
 
-            <img src="https://placehold.co/270" alt="placeholder">
+            <img width="270px" height="270px" src="https://placehold.co/270" alt="placeholder">
 
         </main>
 
