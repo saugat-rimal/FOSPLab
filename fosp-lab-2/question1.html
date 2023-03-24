@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Display</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #time-box {
+            width: 250px;
+            padding: 10px;
+            margin: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        label {
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time Display</h1>
+    <input type="text" id="time-box" placeholder="Time will be displayed here" disabled>
+    <br>
+    <label>
+        <input type="radio" name="time-option" id="start-radio"> Start
+    </label>
+    <label>
+        <input type="radio" name="time-option" id="stop-radio"> Stop
+    </label>
+
+    <script>
+
+        const timeBox = document.getElementById('time-box');
+
+        // get the start radio button
+        const startRadio = document.getElementById('start-radio');
+        // get the stop radio button
+        const stopRadio = document.getElementById('stop-radio');
+
+        // initialize the interval id
+        let intervalId;
+
+        // add a click event listener to the start radio button
+        startRadio.addEventListener('click', () => {
+            // start displaying the time
+            intervalId = setInterval(() => {
+                const now = new Date();   // get the current date and time
+                const time = now.toLocaleTimeString();   // convert to a string
+                timeBox.value = time;    // display the time
+            }, 1000);
+        });
+
+        // add a click event listener to the stop radio button
+        stopRadio.addEventListener('click', () => {
+            // stop displaying the time
+            clearInterval(intervalId);
+        });
+
+    </script>
+</body>
+
+</html>
